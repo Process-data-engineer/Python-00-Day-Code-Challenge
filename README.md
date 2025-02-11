@@ -1,7 +1,11 @@
 # Python-100-Day-Code-Challenge
 print("Welcome to the tip calculator!")
-bill = float(input("What was the total bill? $"))
-tip = int(input("What percentage tip would you like to give? 10 12 15 "))
-people = int(input("How many people to split the bill? "))
-percentage = bill*(tip/100)
-print(f"Each Person Should Pay {round(((bill+percentage)/people), 1)}")
+print("Welcome to the Tip Calculator")
+Bill = float(input("What is your total bill? " + "$"))
+Tip = int(input("what percentage of tip would you like to give ? 10 13 15.."))
+People = int(input("how many people should pay? "))
+tip_per = Bill*(Tip/100)
+bill_tot = Bill+tip_per
+ind_bill = round(bill_tot/People, 2)
+print(f"Every Person Should Pay {ind_bill}")
+
